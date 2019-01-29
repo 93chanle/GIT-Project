@@ -1,7 +1,9 @@
 # 1-Plot.R
 
+install.packages("maps")
 library(ggplot2)
 library(dplyr)
+library(maps)
 
 map <- map_data("world") %>% 
   filter(region != "USSR")
